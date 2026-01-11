@@ -28,7 +28,7 @@ const Home = () => {
     <div className="home">
       <div className="home-hero">
         <div className="hero-content">
-          <h1>Welcome to ARWIN E-Commerce</h1>
+          <h1>Welcome to Amazon E-Commerce</h1>
           <p>Discover amazing products at great prices</p>
           <Link to="/products" className="btn-primary">
             Shop Now

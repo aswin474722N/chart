@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">ARWIN</span>
+          <span className="logo-text">amazon</span>
         </Link>
 
         <div className="navbar-search">

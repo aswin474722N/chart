@@ -1,20 +1,7 @@
-# Dependencies
 node_modules/
-package-lock.json
-
-# Environment variables
 .env
-.env.local
-
-# Logs
 *.log
-npm-debug.log*
-
-# Data files (keep structure but not actual data)
+.DS_Store
 data/*.json
 !data/.gitkeep
-
-# OS files
-.DS_Store
-Thumbs.db
 
