@@ -1,0 +1,46 @@
+.category-filter {
+  background: white;
+  border: 1px solid var(--amazon-border);
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.category-filter h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--amazon-text);
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--amazon-text);
+}
+
+.filter-link {
+  display: block;
+  padding: 8px 10px;
+  color: var(--amazon-text-light);
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.filter-link:hover {
+  background-color: var(--amazon-light);
+  color: var(--amazon-text);
+}
+
+.filter-link.active {
+  background-color: var(--amazon-orange);
+  color: white;
+  font-weight: 500;
+}
+

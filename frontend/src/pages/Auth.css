@@ -1,0 +1,72 @@
+.auth-container {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.auth-box {
+  background: white;
+  border: 1px solid var(--amazon-border);
+  border-radius: 4px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-box h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--amazon-text);
+  font-weight: 400;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--amazon-text);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--amazon-border);
+  border-radius: 3px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: var(--amazon-orange);
+  box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.1);
+}
+
+.auth-box button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.auth-switch {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--amazon-text-light);
+}
+
+.auth-switch a {
+  color: var(--amazon-orange);
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+

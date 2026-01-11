@@ -1,0 +1,136 @@
+.product-detail {
+  padding: 30px 0;
+  background-color: white;
+  min-height: calc(100vh - 200px);
+}
+
+.product-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.product-detail-image {
+  background: white;
+  border: 1px solid var(--amazon-border);
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.product-detail-image img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.product-detail-info h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: var(--amazon-text);
+}
+
+.product-detail-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: var(--amazon-orange);
+  font-size: 18px;
+}
+
+.product-detail-rating span {
+  color: var(--amazon-text-light);
+  font-size: 14px;
+}
+
+.product-detail-price {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--amazon-text);
+  margin-bottom: 30px;
+}
+
+.product-detail-description,
+.product-detail-features {
+  margin-bottom: 30px;
+}
+
+.product-detail-description h3,
+.product-detail-features h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--amazon-text);
+}
+
+.product-detail-description p {
+  color: var(--amazon-text-light);
+  line-height: 1.6;
+}
+
+.product-detail-features ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: var(--amazon-text-light);
+}
+
+.product-detail-features li {
+  margin-bottom: 5px;
+}
+
+.product-detail-stock {
+  margin-bottom: 20px;
+}
+
+.in-stock {
+  color: var(--amazon-success);
+  font-weight: 500;
+}
+
+.out-of-stock {
+  color: var(--amazon-error);
+  font-weight: 500;
+}
+
+.product-detail-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-selector label {
+  font-weight: 500;
+}
+
+.quantity-selector select {
+  padding: 8px;
+  border: 1px solid var(--amazon-border);
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.product-detail-actions button {
+  padding: 12px;
+  font-size: 16px;
+}
+
+@media (max-width: 968px) {
+  .product-detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .product-detail-image {
+    min-height: 300px;
+  }
+}
+

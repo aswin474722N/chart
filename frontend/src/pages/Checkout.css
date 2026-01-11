@@ -1,0 +1,147 @@
+.checkout-page {
+  padding: 30px 0;
+  background-color: white;
+  min-height: calc(100vh - 200px);
+}
+
+.checkout-page h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: var(--amazon-text);
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.checkout-form {
+  background: white;
+  border: 1px solid var(--amazon-border);
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.checkout-section {
+  margin-bottom: 30px;
+}
+
+.checkout-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--amazon-text);
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--amazon-border);
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.card-element-container {
+  padding: 15px;
+  border: 1px solid var(--amazon-border);
+  border-radius: 3px;
+  background: white;
+}
+
+.checkout-summary {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--amazon-border);
+}
+
+.checkout-summary .summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.checkout-sidebar {
+  background: white;
+  border: 1px solid var(--amazon-border);
+  border-radius: 4px;
+  padding: 20px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.checkout-sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--amazon-text);
+}
+
+.checkout-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--amazon-border);
+}
+
+.checkout-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 1px solid var(--amazon-border);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.checkout-item h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: var(--amazon-text);
+}
+
+.checkout-item p {
+  font-size: 12px;
+  color: var(--amazon-text-light);
+}
+
+.checkout-total {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--amazon-border);
+  font-size: 18px;
+  text-align: right;
+}
+
+.order-success {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.order-success h1 {
+  color: var(--amazon-success);
+  margin-bottom: 20px;
+}
+
+.order-success p {
+  color: var(--amazon-text-light);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 968px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-sidebar {
+    position: static;
+  }
+}
+

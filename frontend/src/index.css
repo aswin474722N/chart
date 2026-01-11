@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --amazon-orange: #FF9900;
+  --amazon-dark: #131921;
+  --amazon-dark-hover: #232f3e;
+  --amazon-yellow: #febd69;
+  --amazon-light: #f3f3f3;
+  --amazon-border: #ddd;
+  --amazon-text: #0f1111;
+  --amazon-text-light: #565959;
+  --amazon-success: #007600;
+  --amazon-error: #b12704;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--amazon-text);
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  outline: none;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn-primary {
+  background-color: var(--amazon-orange);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #e8890d;
+}
+
+.btn-secondary {
+  background-color: #f0c14b;
+  color: var(--amazon-text);
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #a88734;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #f4d078;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--amazon-text);
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid var(--amazon-border);
+  transition: background-color 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: var(--amazon-light);
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: var(--amazon-text-light);
+}
+
+.error {
+  color: var(--amazon-error);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.success {
+  color: var(--amazon-success);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
