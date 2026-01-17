@@ -3,3 +3,7 @@ node_modules/
 *.log
 .DS_Store
 
+# Lock files (use npm, not yarn)
+yarn.lock
+**/yarn.lock
+
